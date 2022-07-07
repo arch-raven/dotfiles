@@ -1,0 +1,9 @@
+# Add all your custom exports here
+
+# dotbare necessary exports
+export DOTBARE_DIR="$HOME/dotfiles"
+export DOTBARE_TREE="$HOME"
+
+# Preferences
+export VISUAL=/usr/bin/nvim
+export EDITOR=/usr/bin/nvim

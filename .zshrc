@@ -10,8 +10,6 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/archraven/.oh-my-zsh"
-export VISUAL=/usr/bin/vim
-export EDITOR=/usr/bin/vim
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -116,7 +114,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias labArnab='ssh -N -f -L localhost:7878:localhost:7878 19144026@10.2.60.42'
+
+# Load aliases defined in ~/.zsh_aliases (tracked by dotbare)
+if [ -f ~/.zsh_aliases ]; then
+    source ~/.zsh_aliases
+fi
+
+# Load Export statements defined in ~/.zsh_exports (tracked by dotbare)
+if [ -f ~/.zsh_exports ]; then
+    source ~/.zsh_exports
+fi  
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/archraven/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
