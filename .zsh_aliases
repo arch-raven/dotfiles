@@ -2,3 +2,5 @@
 
 # https://gist.github.com/arch-raven/d3e8e8898274dfab0e728d17fdd4d05a
 alias labArnab='ssh -N -f -L localhost:7878:localhost:7878 19144026@10.2.60.42'
+
+alias vim="nvim"
