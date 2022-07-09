@@ -30,6 +30,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/goyo.vim'                           " Distraction-free viewing
     Plug 'junegunn/limelight.vim'                      " Hyperfocus on a range
     Plug 'junegunn/vim-emoji'                          " Vim needs emojis!
+"{{ Color Schemes }}
+    Plug 'kaicataldo/material.vim', {'branch': 'main'} " Material Theme
 call plug#end()
 
 filetype plugin indent on    " required
@@ -123,8 +125,14 @@ let g:NERDTreeWinSize=38
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Colorscheme
+if (has('termguicolors'))
+  set termguicolors
+endif
+
+let g:material_terminal_italics = 1
+let g:material_theme_style = 'default'
 set background=dark
-colorscheme desert
+colorscheme material
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vifm
