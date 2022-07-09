@@ -16,4 +16,5 @@ if [[ "$TERM" == "xterm-kitty" ]]; then
 fi
 
 # ls aliases
-alias lsh="ls --hyperlink=auto"
+alias lsh="ls -A --color=auto --hyperlink=auto"
+alias lse="exa -a --color=always --group-directories-first --icons"
