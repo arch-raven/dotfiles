@@ -140,6 +140,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Add node to PATH
+export PATH="$HOME/tools/node-v14.15.4-linux-x64/bin:$PATH"
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
