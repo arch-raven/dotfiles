@@ -1,13 +1,10 @@
 # Add aliases here
 
-# https://gist.github.com/arch-raven/d3e8e8898274dfab0e728d17fdd4d05a
-alias labArnab='ssh -N -f -L localhost:7878:localhost:7878 19144026@10.2.60.42'
-
 # To switch between vimrc files
-alias rc2init="cp ~/.config/nvim/init.vim /tmp/init.vim.bak; cp ~/.vimrc ~/.config/nvim/init.vim"
+# alias rc2init="cp ~/.config/nvim/init.vim /tmp/init.vim.bak; cp ~/.vimrc ~/.config/nvim/init.vim"
 # Default preferences
 alias vim="nvim"
-alias dot="dotbare"
+# alias dot="dotbare"
 
 # Kitty
 if [[ "$TERM" == "xterm-kitty" ]]; then
